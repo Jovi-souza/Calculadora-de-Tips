@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+@import url('https://fonts.googleapis.com/css2? family= Space+Mono:wght@700 & display=swap');
+
+.container {
+    background-color: #C5E4E7;
+}
+
+.splitter {
+    color: #5e7a7d;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: large;
+    text-transform: uppercase;
+    width: max-content;
+    margin: auto;
+    text-align: justify;
+    letter-spacing: 1rem;
+    padding: 2em 0;
+}
+
+.boxWrap {
+    padding: 2em;
+    background-color: #ffffff;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.bill {
+    color: #5e7a7d;
+}
+
+.Total {
+    background-color: #f4fafa;
+    color: #00494d;
+    text-align: right;
+    font-size: 1.5rem;
+    font-weight: 700;
+    width: 100%;
+    padding: .5rem 1rem;
+    border-radius: 3px;
+}
+
+/* porcentagem de tips */
+
+.selectTip {
+    color: #5e7a7d;
+    margin: 1.5em 0 .5em 0;
+}
+
+
+.percentage {
+    background-color: #00494d;
+    color: #f4fafa;
+    font-size: 1.5em;
+    width: 6.4em;
+    padding: .5rem;
+    margin: .5rem .2rem;
+    border: none;
+    border-radius: 5px;
+}
+
+@media screen and (min-width: 375px) {
+    .percentage {
+        width: 7.833em;
+    }
+
+    .Custom {
+        width: 7.833em;
+    }
+}
+
+@media screen and (min-width: 425px) {
+    .percentage {
+        width: 9em;
+    }
+
+    .Custom {
+        width: 25em;
+    }
+}
+
+.percentage:hover {
+    color: #00494d;
+    background-color: #26c0ab;
+}
+
+.Custom {
+    text-align: center;
+    background-color: #f4fafa;
+    font-size: 1.5em;
+    width: 6.4em;
+    padding: .5rem;
+    margin: .5rem .2rem;
+    border: none;
+    border-radius: 5px;
+}
+
+/* número de pessoas */
+
+.numberOfPeopleTitle {
+    color: #5e7a7d;
+    margin: 1rem;
+}
+
+.numberOfPeople {
+    background-color: #f4fafa;
+    color: #00494d;
+    width: 100%;
+    margin-bottom: 1em;
+    padding: .5rem 1rem;
+    text-align: right;
+    font-size: 1.5em;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+/* total de gorjetas por pessoa */
+
+.result {
+    background-color: #00494d;
+    padding: 2em 1.5em 1.5em 1.5em;
+    border-radius: 10px;
+    position: relative;
+}
+
+.resultPartial {
+    font-weight: 400;
+    color: #C5E4E7;
+}
+
+.partialPerson {
+    color: #5e7a7d;
+    margin-bottom: 2em;
+}
+
+.recieveAmount {
+    color: #26c0ab;
+    position: absolute;
+    right: .6em;
+    top: 1em;
+    font-size: 2rem;
+}
+
+.recieveTotal {
+    color: #26c0ab;
+    position: absolute;
+    right: .6em;
+    bottom: 3.5em;
+    font-size: 2rem;
+}
+
+.reset {
+    color: #00494d;
+    background-color: #26c0ab;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.5em;
+}

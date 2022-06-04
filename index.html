@@ -5,10 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Tip calculator app</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/styleMobile.css">
+  <link rel="stylesheet" href="css/">
 </head>
 
 <body>
@@ -16,54 +16,49 @@
     <div class="gap">
       <h1 class="splitter">
         spli
-      </h1>
-      <h1 class="splitter1">
+        <br>
         tter
       </h1>
     </div>
     <div class="boxWrap">
-      <h3>Bill</h3>
-      <div class="dollar">
-        <ion-icon name="contact"></ion-icon>
+      <h4 class="bill">Bill</h4>
+      <div class="Total">
+        0
       </div>
       <!-- Selecionar quanto de desconto -->
       <section class="tipPercentage">
-        <h3 class="selectTip">Select Tip %</h3>
+        <h4 class="selectTip">Select Tip %</h4>
         <div class="percentageBlock">
-          <input type="button" class="percentage" value="5%">
-          <input type="button" class="percentage" value="10%">
-          <input type="button" class="percentage" value="15%">
-          <input type="button" class="percentage" value="25%">
-          <input type="button" class="percentage" value="50%">
+          <button class="percentage">5%</button>
+          <button class="percentage">10%</button>
+          <button class="percentage">15%</button>
+          <button class="percentage">25%</button>
+          <button class="percentage">50%</button>
           <input type="number" placeholder="Custom" class="Custom">
         </div>
       </section>
-      <h3>Number of People</h3>
-      <div class="numberOfPeople">
 
+      <h4 class="numberOfPeopleTitle">Number of People</h4>
+      <div class="numberOfPeople">
+        0
       </div>
+
       <!-- Total de gorjetas -->
       <section class="result">
-        <h3 class="resultPartial">Tip Amount</h3>
-        <p>/ person</p>
+        <h4 class="resultPartial">Tip Amount</h4>
+        <p class="partialPerson">/ person</p>
         <div class="recieveAmount" id="">
-
+          $0.00
         </div>
-
-        <h3 class="resultPartial">Total</h3>
-        <p>/ person</p>
+        <h4 class="resultPartial">Total</h4>
+        <p class="partialPerson">/ person</p>
         <div class="recieveTotal" id="">
-
+          $0.00
         </div>
-        <input type="text" placeholder="RESET" class="reset">
+        <button type="reset" class="reset"> reset</button>
       </section>
     </div>
   </main>
-
-
-
-
-
 </body>
 
 </html>
