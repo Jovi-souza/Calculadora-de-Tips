@@ -8,57 +8,43 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Tip calculator app</title>
   <link rel="stylesheet" href="css/styleMobile.css">
-  <link rel="stylesheet" href="css/">
 </head>
 
 <body>
-  <main class="container">
-    <div class="gap">
-      <h1 class="splitter">
-        spli
-        <br>
-        tter
-      </h1>
-    </div>
-    <div class="boxWrap">
-      <h4 class="bill">Bill</h4>
-      <div class="Total">
-        0
-      </div>
-      <!-- Selecionar quanto de desconto -->
-      <section class="tipPercentage">
-        <h4 class="selectTip">Select Tip %</h4>
-        <div class="percentageBlock">
-          <button class="percentage">5%</button>
-          <button class="percentage">10%</button>
-          <button class="percentage">15%</button>
-          <button class="percentage">25%</button>
-          <button class="percentage">50%</button>
-          <input type="number" placeholder="Custom" class="Custom">
-        </div>
-      </section>
+  <div class="container">
+    <h1 class="splitter">
+      spli
+      <br>
+      tter
+    </h1>
+    <main class="tipsApp">
 
-      <h4 class="numberOfPeopleTitle">Number of People</h4>
-      <div class="numberOfPeople">
-        0
-      </div>
+      <h2 class="bill">Bill</h2>
+      <input type="text" value="4891451984518" class="selecValue">
+      <h2 class="selectTip">Select Tip %</h2>
+      <button class="percentage5">5%</button>
+      <button class="percentage10">10%</button>
+      <button class="percentage15">15%</button>
+      <button class="percentage25">25%</button>
+      <button class="percentage50">50%</button>
+      <input type="number" placeholder="Custom" class="Custom">
 
-      <!-- Total de gorjetas -->
-      <section class="result">
-        <h4 class="resultPartial">Tip Amount</h4>
-        <p class="partialPerson">/ person</p>
-        <div class="recieveAmount" id="">
-          $0.00
-        </div>
-        <h4 class="resultPartial">Total</h4>
-        <p class="partialPerson">/ person</p>
-        <div class="recieveTotal" id="">
-          $0.00
-        </div>
+      <h2 class="numberOfPeopleTitle">Number of People</h2>
+      <input type="number" value="0" class="numberOfPeople">
+
+      <div class="total">
+        <h3 class="tipAmount">Tip Amount</h3>
+        <p class="person">/ person</p>
+        <p class="pricePerson">$0.00</p>
+
+        <h3 class="totalPerson">Total</h3>
+        <p class="person">/ person</p>
+        <p class="priceTotal">$0.00</p>
         <button type="reset" class="reset"> reset</button>
-      </section>
-    </div>
-  </main>
+      </div>
+
+    </main>
+  </div>
 </body>
 
 </html>

@@ -1,11 +1,10 @@
+@import url('https://fonts.googleapis.com/css2? family= Space+Mono:wght@700 & display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: monospace;
 }
-
-@import url('https://fonts.googleapis.com/css2? family= Space+Mono:wght@700 & display=swap');
 
 .container {
     background-color: #C5E4E7;
@@ -13,156 +12,173 @@
 
 .splitter {
     color: #5e7a7d;
+    width: max-content;
+    padding: 2em 0;
+    margin: auto;
     font-family: sans-serif;
     font-weight: 700;
     font-size: large;
-    text-transform: uppercase;
-    width: max-content;
-    margin: auto;
-    text-align: justify;
     letter-spacing: 1rem;
-    padding: 2em 0;
+    text-transform: uppercase;
+    text-align: justify;
 }
 
-.boxWrap {
-    padding: 2em;
-    background-color: #ffffff;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+.tipsApp {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(12, 2em);
+    gap: 10px 10px;
+
+    background-color: #fff;
+    border-radius: 10px;
+    width: 100vw;
+    padding: 1em;
+    box-sizing: border-box;
 }
 
 .bill {
+    grid-column: 1 / 3;
     color: #5e7a7d;
+    font-size: 1em;
+    font-weight: 700;
+    letter-spacing: 2px;
 }
 
-.Total {
+.selecValue {
+    grid-column: 1/3;
+    grid-row: 2/3;
     background-color: #f4fafa;
     color: #00494d;
-    text-align: right;
-    font-size: 1.5rem;
+    font-size: 1em;
     font-weight: 700;
-    width: 100%;
-    padding: .5rem 1rem;
-    border-radius: 3px;
+    padding-right: 5px;
+    text-align: right;
+    border: none;
 }
-
-/* porcentagem de tips */
 
 .selectTip {
+    margin: 20px 10px 5px 0px;
     color: #5e7a7d;
-    margin: 1.5em 0 .5em 0;
+    font-size: 1em;
+    font-weight: 700;
+    letter-spacing: 2px;
 }
 
-
-.percentage {
+.percentage5,
+.percentage10,
+.percentage15,
+.percentage25,
+.percentage50 {
+    font-weight: 700;
     background-color: #00494d;
     color: #f4fafa;
-    font-size: 1.5em;
-    width: 6.4em;
-    padding: .5rem;
-    margin: .5rem .2rem;
     border: none;
     border-radius: 5px;
 }
 
-@media screen and (min-width: 375px) {
-    .percentage {
-        width: 7.833em;
-    }
-
-    .Custom {
-        width: 7.833em;
-    }
+.percentage5 {
+    grid-column: 1/2;
+    grid-row: 4 /5;
 }
 
-@media screen and (min-width: 425px) {
-    .percentage {
-        width: 9em;
-    }
-
-    .Custom {
-        width: 25em;
-    }
+.percentage10 {
+    grid-column: 2/3;
+    grid-row: 4 /5;
 }
 
-.percentage:hover {
-    color: #00494d;
-    background-color: #26c0ab;
+.percentage15 {
+    grid-column: 1/2;
+    grid-row: 5 /6;
+}
+
+.percentage25 {
+    grid-column: 2/3;
+    grid-row: 5 /6;
+}
+
+.percentage50 {
+    grid-column: 1/2;
+    grid-row: 6/7;
 }
 
 .Custom {
-    text-align: center;
+    grid-column: 2/3;
+    grid-row: 6 /7;
+    font-weight: 700;
+
     background-color: #f4fafa;
-    font-size: 1.5em;
-    width: 6.4em;
-    padding: .5rem;
-    margin: .5rem .2rem;
+    color: #00494d;
     border: none;
     border-radius: 5px;
+    text-align: center;
+    width: 100%;
 }
 
-/* número de pessoas */
-
 .numberOfPeopleTitle {
+    margin: 20px 10px 5px 0px;
     color: #5e7a7d;
-    margin: 1rem;
+    font-size: 1em;
+    grid-column: 1/3;
+    grid-row: 7/8;
 }
 
 .numberOfPeople {
-    background-color: #f4fafa;
+    grid-column: 1/3;
     color: #00494d;
-    width: 100%;
-    margin-bottom: 1em;
-    padding: .5rem 1rem;
+    background-color: #f4fafa;
+    border: none;
     text-align: right;
-    font-size: 1.5em;
-    font-weight: 700;
-    border-radius: 5px;
+    padding-right: 5px;
 }
 
-/* total de gorjetas por pessoa */
-
-.result {
+.total {
     background-color: #00494d;
-    padding: 2em 1.5em 1.5em 1.5em;
+    grid-column: 1/3;
+    grid-row: 9/13;
+    padding: 15px;
     border-radius: 10px;
     position: relative;
 }
 
-.resultPartial {
-    font-weight: 400;
-    color: #C5E4E7;
+.tipAmount,
+.totalPerson {
+    color: #f4fafa;
+    font-family: monospace;
 }
 
-.partialPerson {
+.person {
     color: #5e7a7d;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 }
 
-.recieveAmount {
+.pricePerson,
+.priceTotal {
     color: #26c0ab;
-    position: absolute;
-    right: .6em;
-    top: 1em;
-    font-size: 2rem;
+    font-size: 1.8em;
+    letter-spacing: 2px;
 }
 
-.recieveTotal {
-    color: #26c0ab;
+.pricePerson {
     position: absolute;
-    right: .6em;
-    bottom: 3.5em;
-    font-size: 2rem;
+    right: 1em;
+    top: .5em;
+}
+
+.priceTotal {
+    top: 2.4em;
+    right: 1em;
+    position: absolute;
 }
 
 .reset {
-    color: #00494d;
     background-color: #26c0ab;
-    padding: 10px;
-    width: 100%;
-    border-radius: 5px;
-    border: none;
+    color: #00494d;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 1.5em;
+    font-family: monospace;
+    width: 100%;
+    padding: .5em;
+    margin: 0 auto;
+    border: none;
+    border-radius: 3px;
 }
