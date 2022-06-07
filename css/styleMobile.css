@@ -13,11 +13,11 @@
 .splitter {
     color: #5e7a7d;
     width: max-content;
-    padding: 2em 0;
+    padding: 2em 0 2em 1em;
     margin: auto;
     font-family: sans-serif;
     font-weight: 700;
-    font-size: large;
+    font-size: 1.3em;
     letter-spacing: 1rem;
     text-transform: uppercase;
     text-align: justify;
@@ -26,18 +26,20 @@
 .tipsApp {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(12, 2em);
+    grid-template-rows: repeat(10, 2.3em);
     gap: 10px 10px;
 
     background-color: #fff;
-    border-radius: 10px;
+    border-radius: 20px;
     width: 100vw;
-    padding: 1em;
+    padding: 1.3em;
     box-sizing: border-box;
 }
 
 .bill {
     grid-column: 1 / 3;
+
+    margin-top: 13px;
     color: #5e7a7d;
     font-size: 1em;
     font-weight: 700;
@@ -48,7 +50,7 @@
     grid-column: 1/3;
     grid-row: 2/3;
     background-color: #f4fafa;
-    color: #00494d;
+    color: #5e7a7d;
     font-size: 1em;
     font-weight: 700;
     padding-right: 5px;
@@ -57,7 +59,7 @@
 }
 
 .selectTip {
-    margin: 20px 10px 5px 0px;
+    margin: 15px 10px 5px 0px;
     color: #5e7a7d;
     font-size: 1em;
     font-weight: 700;
@@ -73,6 +75,7 @@
     background-color: #00494d;
     color: #f4fafa;
     border: none;
+    font-size: 1.3rem;
     border-radius: 5px;
 }
 
@@ -105,7 +108,7 @@
     grid-column: 2/3;
     grid-row: 6 /7;
     font-weight: 700;
-
+    font-size: 1.2rem;
     background-color: #f4fafa;
     color: #00494d;
     border: none;
@@ -115,9 +118,10 @@
 }
 
 .numberOfPeopleTitle {
-    margin: 20px 10px 5px 0px;
+    margin: 15px 10px 5px 0px;
     color: #5e7a7d;
     font-size: 1em;
+    font-weight: 700;
     grid-column: 1/3;
     grid-row: 7/8;
 }
