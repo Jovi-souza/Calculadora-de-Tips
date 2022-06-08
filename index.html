@@ -21,30 +21,33 @@
     <main class="tipsApp">
 
       <h2 class="bill">Bill</h2>
-      <input type="text" value="0" class="selecValue">
+      <input type="text" value="" placeholder="0" class="accountValue" id="accountValue">
+
       <h2 class="selectTip">Select Tip %</h2>
-      <button class="percentage5">5%</button>
-      <button class="percentage10">10%</button>
-      <button class="percentage15">15%</button>
-      <button class="percentage25">25%</button>
-      <button class="percentage50">50%</button>
-      <input type="number" placeholder="Custom" class="Custom">
+      <button onclick="calculateTipPercentage()" value="5" class="percentage5" id="percentage">5%</button>
+      <button onclick="calculateTipPercentage()" value="10" class="percentage10" id="percentage">10%</button>
+      <button onclick="calculateTipPercentage()" value="15" class="percentage15" id="percentage">15%</button>
+      <button onclick="calculateTipPercentage()" value="25" class="percentage25" id="percentage">25%</button>
+      <button onclick="calculateTipPercentage()" value="50" class="percentage50" id="percentage">50%</button>
+      <input type="text" value="" placeholder="Custom" onchange="calculateTipPercentageCustom()" class="Custom"
+        id="Custom" min="1">
 
       <h2 class="numberOfPeopleTitle">Number of People</h2>
-      <input type="number" value="0" class="numberOfPeople">
+      <input type="text" value="" required placeholder="0" class="numberOfPeople" id="numberOfPeople">
 
-      <div class="total">
+      <div class=" total">
         <h3 class="tipAmount">Tip Amount</h3>
         <p class="person personGrid1">/ person</p>
-        <p class="pricePerson"> $0.00</p>
+        <p class="pricePerson" id="pricePerson"> $0.00</p>
 
         <h3 class="totalPerson">Total</h3>
         <p class="person personGrid2">/ person</p>
-        <p class="priceTotal"> $0.00</p>
-        <button type="reset" class="reset"> reset</button>
+        <p class="priceTotal" id="priceTotal"> $0.00</p>
+        <button type="reset" class="reset" id="reset" onclick="reset()"> reset</button>
       </div>
     </main>
   </div>
+  <script src="js/script.js" defer></script>
 </body>
 
 </html>
