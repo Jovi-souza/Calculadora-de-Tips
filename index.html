@@ -21,19 +21,19 @@
     <main class="tipsApp">
 
       <h2 class="bill">Bill</h2>
-      <input type="text" value="" placeholder="0" class="accountValue" id="accountValue">
+      <input type="text" placeholder="0" class="accountAmount" id="accountAmount" required name=required>
 
       <h2 class="selectTip">Select Tip %</h2>
-      <button onclick="calculateTipPercentage()" value="5" class="percentage5" id="percentage">5%</button>
-      <button onclick="calculateTipPercentage()" value="10" class="percentage10" id="percentage">10%</button>
-      <button onclick="calculateTipPercentage()" value="15" class="percentage15" id="percentage">15%</button>
-      <button onclick="calculateTipPercentage()" value="25" class="percentage25" id="percentage">25%</button>
-      <button onclick="calculateTipPercentage()" value="50" class="percentage50" id="percentage">50%</button>
-      <input type="text" value="" placeholder="Custom" onchange="calculateTipPercentageCustom()" class="Custom"
-        id="Custom" min="1">
+      <button onclick="percentage5()" value="5" class="percentage5" id="percentage">5%</button>
+      <button onclick="percentage10()" value="10" class="percentage10" id="percentage">10%</button>
+      <button onclick="percentage15()" value="15" class="percentage15" id="percentage">15%</button>
+      <button onclick="percentage25()" value="25" class="percentage25" id="percentage">25%</button>
+      <button onclick="percentage50()" value="50" class="percentage50" id="percentage">50%</button>
+      <input type="text" required="" placeholder="Custom" onchange="calculateTipPercentageCustom()" class="Custom"
+        id="Custom" required name=required>
 
       <h2 class="numberOfPeopleTitle">Number of People</h2>
-      <input type="text" value="" required placeholder="0" class="numberOfPeople" id="numberOfPeople">
+      <input type="text" required="" placeholder="0" class="numberOfPeople" id="numberOfPeople" required name=required>
 
       <div class=" total">
         <h3 class="tipAmount">Tip Amount</h3>
@@ -43,6 +43,7 @@
         <h3 class="totalPerson">Total</h3>
         <p class="person personGrid2">/ person</p>
         <p class="priceTotal" id="priceTotal"> $0.00</p>
+
         <button type="reset" class="reset" id="reset" onclick="reset()"> reset</button>
       </div>
     </main>
